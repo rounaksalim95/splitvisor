@@ -1,10 +1,14 @@
+import os
+from dotenv import load_dotenv
 import requests
 import csv
 from datetime import datetime
 
 # Splitwise API endpoint and access token
 base_url = "https://secure.splitwise.com/api/v3.0"
-access_token = "YOUR_ACCESS_TOKEN"
+
+load_dotenv()
+access_token = os.getenv("API_KEY")
 
 # Function to get user's groups
 
