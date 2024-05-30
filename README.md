@@ -29,6 +29,6 @@ API_KEY=<your-api-key>
 
 - Run `pip3 install -r requirements.txt` to install the dependencies
 
-- Run `python3 splitwiser.py <path-to-csv-file>`
+- Run `python3 splitwiser.py`
 
 - Voila! The expenses will be added to the selected group and split equally!

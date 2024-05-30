@@ -88,8 +88,7 @@ for expense in expenses:
     """
     date, description, amount = expense
     response = create_expense(group_id, description, amount, date)
-    print(f"Full response: {response}")
-    if "errors" in response:
+    if response["errors"]:
         print(f"Error creating expense: {response['errors']}")
     else:
-        print(f"Expense created: {response['expenses'][0]['description']}")
+        print(f"Expense created for {response['expenses'][0]['description']} with total cost of ${response['expenses'][0]['cost']}")
